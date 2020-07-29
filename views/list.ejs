@@ -4,11 +4,12 @@
         
         <h1 style="margin: 10px;"> TO-DO-LIST</h1>
         <ul style="list-style-type: none;">
+            <!-- Iterating thorough tasks in database -->
         <% for(let i of task_list) { %>
             <li>
                 <p> <%= i.name %></p>
                 <p><%= i.Due_date %></p>
-            
+            <!-- Form to delete a certain task -->
             <div class="delete" style="height: 40px; width: 40px; background-color:transparent;">
             <a href="/delete-item/?id=<%= i._id %>" style="height: inherit; width: inherit; top:30%; position: relative;" >
                 <i class="fa fa-trash" aria-hidden="true" style="color: red;"></i>
@@ -18,9 +19,11 @@
             
             
         <% } %> 
+        <!-- Creating new Tasks -->
+        <!-- Information needs to be posted since new Tasks are being added -->
         <li style="background-color: transparent;">
         <p style="color: white; font-size: 16px;"> Add Task</p>
-        <form action="/create-item" method="POST">
+        <form action="/create-item" method="POST"> 
         <input type="text" name="name" placeholder="Task Name" required>
         <input type="date" name="Due_date" placeholder="Due Date of Task" required>
         <button type="submit">Add Task </button>

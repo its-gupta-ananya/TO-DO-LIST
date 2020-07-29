@@ -5,14 +5,19 @@
             <%= title %>
         </title>
         <link rel="stylesheet" type="text/css" href="./css/layout.css">
-        <link rel="icon" type="img/png" href="./images/favicon.png">
+        <link rel="icon" type="img/png" href="./images/favicon.png"> <!--favicon--> 
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <!-- including any css files present in the ejs file being laid out -->
         <%- style %>
     </head>
     <body>
+        <!-- including header from header.js -->
         <%- include('_header') %>
+        <!-- Substituting body from other pages to be displayed here -->
         <%- body %>
+        <!-- including footer from footer.js -->
         <%- include('_footer') %>
+        <!-- including any js files present in the ejs file being laid out -->
         <%- script %>
     </body>
 </html>
