@@ -1,0 +1,50 @@
+html
+{
+    background-color: white;
+    background-image: "./images/twitter_header_photo_2.png";
+}
+h1
+{
+    color: rgb(122, 122, 168);
+    font-size: large;
+}
+p{
+    display: inline-block;
+    margin: 10px;
+}
+button , input
+{
+    margin: 0px 5px 10px 5px;
+    width: 150px;
+    padding: 5px 10px 10px 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: #f7f7f7;
+    color: black;
+    font-family: Georgia, serif;
+    font-stretch: semi-expanded;
+}
+header
+{
+    margin: 10px;
+    height: 50px;
+    width: 100%; 
+    background-color: lightblue; 
+    position: fixed; 
+    top:0px; 
+    margin:0px;
+}
+ul
+{
+    color: #471e8a;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    
+
+}
+li{
+    margin: 2px;
+    background-color: #f0edf3;
+}

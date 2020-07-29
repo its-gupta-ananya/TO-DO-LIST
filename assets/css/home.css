@@ -1,6 +1,28 @@
-.body
+body
 {
-    text-align: center;
-    color: aquamarine;
-    background-color: blueviolet;
+    margin: 0px;
+    padding: 0px;
+
+}
+h1
+{
+    color: darkblue;
+    font-family: Georgia, serif;
+    font-size: 40px;
+
+}
+#main_content
+{
+    position: relative;
+    top: 70px;
+    margin: 50px;
+    position: center;
+    width: 35%;
+}
+.delete
+{
+    display: inline-block;
+    position: absolute;
+    left : 80%;
+    
 }

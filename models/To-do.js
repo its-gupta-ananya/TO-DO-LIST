@@ -11,7 +11,7 @@ const ItemSchema = mongoose.Schema
     },
     Due_date:
     {
-        type: Date,
+        type: String,
         required: true,
         
     }
